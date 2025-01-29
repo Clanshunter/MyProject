@@ -9,6 +9,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            background: #f9f9f9;
         }
         header {
             background: url('/1.jpg') no-repeat center center/cover;
@@ -22,6 +23,7 @@
         }
         header h1 {
             font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
         header p {
             font-size: 1.5rem;
@@ -32,29 +34,39 @@
             max-width: 1200px;
             margin: auto;
         }
-        .services, .team, .contact {
-            margin-top: 20px;
-        }
-        .services img, .team img, .contact img {
-            max-width: 100%;
-            height: auto;
+        .section {
+            background: white;
+            padding: 20px;
             border-radius: 8px;
-            margin-top: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         .contact {
             background: #f4f4f4;
             padding: 20px;
             border-radius: 8px;
+            text-align: center;
         }
-        .contact h2, .services h2, .team h2 {
-            margin-top: 0;
-        }
-        .contact p, .services p, .team p {
+        .contact p {
             margin: 5px 0;
+            font-size: 1.2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background: #222;
             color: white;
             margin-top: 20px;
@@ -74,32 +86,33 @@
         <div>
             <h1>Willkommen bei Ihrer Physiotherapie</h1>
             <p>Professionelle Dienstleistungen für Ihre Gesundheit und Wohlbefinden</p>
+            <a href="#services" class="btn">Mehr erfahren</a>
         </div>
     </header>
 
     <div class="content">
-        <section class="services">
+        <section id="services" class="section">
             <h2>Unsere Leistungen</h2>
-            <p>Wir bieten eine Vielzahl von physiotherapeutischen Behandlungen, um Ihre Gesundheit zu fördern. Unser erfahrenes Team sorgt dafür, dass Sie sich in besten Händen fühlen.</p>
+            <p>Wir bieten eine Vielzahl von physiotherapeutischen Behandlungen, um Ihre Gesundheit zu fördern:</p>
             <ul>
                 <li>Manuelle Therapie</li>
-                <li>Massagebehandlungen</li>
-                <li>Rehabilitation nach Verletzungen</li>
                 <li>Sportphysiotherapie</li>
-                <li>Präventive Gesundheitsförderung</li>
+                <li>Massage- und Entspannungstechniken</li>
+                <li>Rehabilitation nach Verletzungen</li>
+                <li>Haltungs- und Bewegungstraining</li>
             </ul>
-            <img src="https://via.placeholder.com/800x400" alt="Physiotherapie Leistung">
         </section>
 
-        <section class="team">
-            <h2>Unser Team</h2>
-            <p>Unsere erfahrenen Physiotherapeuten sind spezialisiert auf individuelle Behandlungen, um Ihre Genesung zu unterstützen.</p>
+        <section class="section">
+            <h2>Warum uns wählen?</h2>
+            <p>Unsere Praxis bietet erstklassige Dienstleistungen mit erfahrenen Therapeuten und modernen Techniken.</p>
             <ul>
-                <li>Dr. Anna Müller - Spezialistin für Sportphysiotherapie</li>
-                <li>Herr Markus Klein - Experte für manuelle Therapie</li>
-                <li>Frau Lisa Schubert - Fachfrau für Rehabilitation</li>
+                <li>Individuelle Betreuung</li>
+                <li>Moderne Ausstattung</li>
+                <li>Ganzheitlicher Ansatz</li>
+                <li>Angenehme Atmosphäre</li>
+                <li>Zentrale Lage</li>
             </ul>
-            <img src="https://via.placeholder.com/800x400" alt="Unser Team">
         </section>
 
         <section class="contact">
@@ -107,13 +120,7 @@
             <p><strong>Adresse:</strong> Musterstraße 123, 12345 Musterstadt</p>
             <p><strong>Telefon:</strong> +49 123 456789</p>
             <p><strong>Email:</strong> info@physiotherapie-muster.de</p>
-            <p><strong>Öffnungszeiten:</strong></p>
-            <ul>
-                <li>Montag - Freitag: 08:00 - 18:00</li>
-                <li>Samstag: 09:00 - 14:00</li>
-                <li>Sonntag: Geschlossen</li>
-            </ul>
-            <img src="https://via.placeholder.com/800x400" alt="Kontaktinformationen">
+            <a href="mailto:info@physiotherapie-muster.de" class="btn">Jetzt kontaktieren</a>
         </section>
     </div>
 
