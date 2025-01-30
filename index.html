@@ -50,60 +50,20 @@
         .social-icons a:hover {
             color: #FFD700;
         }
-        .qr-code-card {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: white;
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            max-width: 150px;
-            z-index: 10;
-            display: none;
-        }
-        .qr-code-card img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .qr-code-card p {
-            font-size: 0.9rem;
-            color: #333;
-            margin-top: 5px;
-        }
-        .close-btn {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            color: #333;
-            cursor: pointer;
-        }
-        .close-btn:hover {
-            color: #FF0000;
-        }
-        .reopen-btn {
-            display: block;
-            margin: 20px auto 0;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .reopen-btn:hover {
-            background: #0056b3;
-        }
         .content {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #007BFF;
         }
         footer {
             text-align: center;
@@ -111,24 +71,6 @@
             background: #222;
             color: white;
             margin-top: 20px;
-        }
-        @media (max-width: 1024px) {
-            .qr-code-card {
-                position: relative;
-                top: auto;
-                right: auto;
-                margin: 20px auto 0;
-            }
-            header {
-                height: auto;
-                padding-bottom: 80px;
-            }
-            header h1 {
-                font-size: 2rem;
-            }
-            header p {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
@@ -143,43 +85,48 @@
                 <a href="#" target="_blank"><i class="fas fa-phone"></i></a>
                 <a href="mailto:info@physiotherapie-muster.de"><i class="fas fa-envelope"></i></a>
             </div>
-            <button class="reopen-btn" id="reopenBtn" onclick="reopenQRCodeCard()">QR-Code anzeigen</button>
-        </div>
-        <div class="qr-code-card" id="qrCodeCard">
-            <button class="close-btn" onclick="closeQRCodeCard()">×</button>
-            <img src="qr.jpeg" alt="QR-Code für Kontakt und Social Media">
-            <p>Scanne den QR-Code<br>für weitere Infos</p>
         </div>
     </header>
 
     <div class="content">
-        <section id="services" class="section">
+        <section class="section">
+            <h2>Über uns</h2>
+            <p>Unsere Praxis für Physiotherapie bietet seit über 10 Jahren professionelle Behandlungen für Patienten aller Altersgruppen. Unser Team aus erfahrenen Therapeuten ist darauf spezialisiert, Ihnen die bestmögliche Versorgung zu bieten, um Schmerzen zu lindern und Ihre Mobilität zu verbessern.</p>
+        </section>
+
+        <section class="section">
+            <h2>Unsere Philosophie</h2>
+            <p>Wir glauben daran, dass jeder Mensch individuelle Bedürfnisse hat. Deshalb setzen wir auf maßgeschneiderte Behandlungspläne, die auf die spezifischen Anforderungen jedes Patienten abgestimmt sind. Unser Ziel ist es, Ihnen durch gezielte physiotherapeutische Maßnahmen zu helfen, Ihre Lebensqualität nachhaltig zu verbessern.</p>
+        </section>
+
+        <section class="section">
             <h2>Unsere Leistungen</h2>
-            <p>Wir bieten eine Vielzahl von physiotherapeutischen Behandlungen, um Ihre Gesundheit zu fördern:</p>
             <ul>
-                <li>Manuelle Therapie</li>
-                <li>Sportphysiotherapie</li>
-                <li>Massage- und Entspannungstechniken</li>
-                <li>Rehabilitation nach Verletzungen</li>
-                <li>Haltungs- und Bewegungstraining</li>
+                <li>Manuelle Therapie zur Behandlung von Muskel- und Gelenkbeschwerden</li>
+                <li>Sportphysiotherapie zur Unterstützung von Athleten</li>
+                <li>Massage- und Entspannungstechniken zur Stressreduktion</li>
+                <li>Rehabilitation nach Verletzungen und Operationen</li>
+                <li>Haltungs- und Bewegungstraining für eine bessere Körperhaltung</li>
+                <li>Elektrotherapie zur Schmerzlinderung und Muskelerholung</li>
             </ul>
+        </section>
+
+        <section class="section">
+            <h2>Warum uns wählen?</h2>
+            <p>Unsere Praxis bietet eine moderne Ausstattung und eine freundliche Atmosphäre. Wir setzen auf eine ganzheitliche Behandlungsmethode und arbeiten eng mit Ärzten und Fachpersonal zusammen, um die bestmögliche Therapie für unsere Patienten zu gewährleisten.</p>
+        </section>
+
+        <section class="section">
+            <h2>Kontakt</h2>
+            <p><strong>Adresse:</strong> Musterstraße 123, 12345 Musterstadt</p>
+            <p><strong>Telefon:</strong> +49 123 456789</p>
+            <p><strong>Email:</strong> info@physiotherapie-muster.de</p>
+            <p>Vereinbaren Sie noch heute einen Termin und lassen Sie sich von unseren Experten beraten!</p>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2025 Physiotherapie Muster. Alle Rechte vorbehalten.</p>
     </footer>
-
-    <script>
-        function closeQRCodeCard() {
-            document.getElementById('qrCodeCard').style.display = 'none';
-            document.getElementById('reopenBtn').style.display = 'block';
-        }
-
-        function reopenQRCodeCard() {
-            document.getElementById('qrCodeCard').style.display = 'block';
-            document.getElementById('reopenBtn').style.display = 'none';
-        }
-    </script>
 </body>
 </html>
