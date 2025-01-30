@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physiotherapie Dienstleistungen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -13,7 +14,7 @@
             color: #333;
         }
         header {
-            background: url('1.jpg') no-repeat center center/cover;
+            background: url('2.jpg') no-repeat center center/cover;
             color: white;
             height: 60vh;
             display: flex;
@@ -45,6 +46,20 @@
             font-size: 1.5rem;
             margin-top: 10px;
         }
+        .social-icons {
+            margin-top: 15px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #FFD700;
+        }
         .qr-code {
             margin-top: 15px;
         }
@@ -57,53 +72,6 @@
             max-width: 1200px;
             margin: auto;
             animation: fadeIn 1s ease-in-out;
-        }
-        .section {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            transition: transform 0.3s;
-        }
-        .section:hover {
-            transform: translateY(-5px);
-        }
-        .contact {
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .contact p {
-            margin: 5px 0;
-            font-size: 1.2rem;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            display: inline-block;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #0056b3;
         }
         footer {
             text-align: center;
@@ -131,9 +99,14 @@
         <div>
             <h1>Willkommen bei Ihrer Physiotherapie</h1>
             <p>Professionelle Dienstleistungen für Ihre Gesundheit und Wohlbefinden</p>
-            <a href="#services" class="btn">Mehr erfahren</a>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/dm_deutschland/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@dm_deutschland" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="tel:+1234567890" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="mailto:info@physiotherapie-muster.de"><i class="fas fa-envelope"></i></a>
+            </div>
             <div class="qr-code">
-                <img src="IMG_0872.jpeg" alt="QR-Code für Kontakt und Social Media">
+                <img src="qr.jpeg" alt="QR-Code für Kontakt und Social Media">
             </div>
         </div>
     </header>
@@ -149,20 +122,6 @@
                 <li>Rehabilitation nach Verletzungen</li>
                 <li>Haltungs- und Bewegungstraining</li>
             </ul>
-        </section>
-
-        <section class="contact">
-            <h2>Kontakt</h2>
-            <p><strong>Adresse:</strong> Musterstraße 123, 12345 Musterstadt</p>
-            <p><strong>Telefon:</strong> +49 123 456789</p>
-            <p><strong>Email:</strong> info@physiotherapie-muster.de</p>
-            <a href="mailto:info@physiotherapie-muster.de" class="btn">Jetzt kontaktieren</a>
-            <div class="social-icons">
-                <a href="#" target="_blank">📞</a>
-                <a href="#" target="_blank">✉️</a>
-                <a href="#" target="_blank">📷 Instagram</a>
-                <a href="#" target="_blank">🎵 TikTok</a>
-            </div>
         </section>
     </div>
 
