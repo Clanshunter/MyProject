@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background: url('/1.jpg') no-repeat center center/cover;
+            background: url('1.jpg') no-repeat center center/cover;
             color: white;
             height: 60vh;
             display: flex;
@@ -22,6 +22,7 @@
             text-align: center;
             padding: 20px;
             position: relative;
+            flex-direction: column;
         }
         header::after {
             content: '';
@@ -43,6 +44,13 @@
         header p {
             font-size: 1.5rem;
             margin-top: 10px;
+        }
+        .qr-code {
+            margin-top: 15px;
+        }
+        .qr-code img {
+            width: 120px;
+            height: 120px;
         }
         .content {
             padding: 20px;
@@ -84,6 +92,19 @@
         .btn:hover {
             background: #0056b3;
         }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
         footer {
             text-align: center;
             padding: 15px;
@@ -111,6 +132,9 @@
             <h1>Willkommen bei Ihrer Physiotherapie</h1>
             <p>Professionelle Dienstleistungen für Ihre Gesundheit und Wohlbefinden</p>
             <a href="#services" class="btn">Mehr erfahren</a>
+            <div class="qr-code">
+                <img src="IMG_0872.jpeg" alt="QR-Code für Kontakt und Social Media">
+            </div>
         </div>
     </header>
 
@@ -127,24 +151,18 @@
             </ul>
         </section>
 
-        <section class="section">
-            <h2>Warum uns wählen?</h2>
-            <p>Unsere Praxis bietet erstklassige Dienstleistungen mit erfahrenen Therapeuten und modernen Techniken.</p>
-            <ul>
-                <li>Individuelle Betreuung</li>
-                <li>Moderne Ausstattung</li>
-                <li>Ganzheitlicher Ansatz</li>
-                <li>Angenehme Atmosphäre</li>
-                <li>Zentrale Lage</li>
-            </ul>
-        </section>
-
         <section class="contact">
             <h2>Kontakt</h2>
             <p><strong>Adresse:</strong> Musterstraße 123, 12345 Musterstadt</p>
             <p><strong>Telefon:</strong> +49 123 456789</p>
             <p><strong>Email:</strong> info@physiotherapie-muster.de</p>
             <a href="mailto:info@physiotherapie-muster.de" class="btn">Jetzt kontaktieren</a>
+            <div class="social-icons">
+                <a href="#" target="_blank">📞</a>
+                <a href="#" target="_blank">✉️</a>
+                <a href="#" target="_blank">📷 Instagram</a>
+                <a href="#" target="_blank">🎵 TikTok</a>
+            </div>
         </section>
     </div>
 
